@@ -5,8 +5,11 @@ i = abs(number) % 10
 
 if number < 0:
     i = -i
-    print("Last digit of {:d} is {:d} and is less than 6 and not 0\
-        ".format(number, i))
+    if i == 0:
+        print("Last digit of {:d} is 0 and is 0".format(number))
+    else:
+        print("Last digit of {:d} is {:d} and is less than 6 and not 0\
+            ".format(number, i))
 else:
     if i > 5:
         print("Last digit of {:d} is {:d} and is greater than \

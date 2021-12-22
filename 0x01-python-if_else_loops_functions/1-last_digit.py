@@ -6,11 +6,10 @@ if number < 0:
     modulo = number % -10
 else:
     modulo = number % 10
+print("Last digit of {:d} is {:d} ".format(number, modulo), end="")
 if modulo > 5:
-    print("Last digit of {:d} is {:d} and is greater than \
-            5".format(number, modulo))
+    print("and is greater than 5")
 elif modulo == 0:
-    print("Last digit of {:d} is 0 and is 0".format(number))
+    print("is 0 and is 0")
 else:
-    print("Last digit of {:d} is {:d} and is less than 6 and not 0\
-    ".format(number, modulo))
+    print("and is less than 6 and not 0")

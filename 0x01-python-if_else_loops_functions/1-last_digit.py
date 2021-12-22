@@ -9,7 +9,8 @@ if number < 0:
         ".format(number, i))
 else:
     if i > 5:
-        print("Last digit of {:d} is {:d} and is greater than 5".format(number, i))
+        print("Last digit of {:d} is {:d} and is greater than \
+            5".format(number, i))
     elif i == 0:
         print("Last digit of {:d} is 0 and is 0".format(number))
     else:

@@ -3,11 +3,10 @@
 
 
 def new_in_list(my_list, idx, element):
-
-    if idx < 0:
-        return my_list
-    if idx > len(my_list):
-        return my_list
     my_new_in_list = my_list.copy()
+    if idx < 0:
+        return my_new_in_list
+    if idx > len(my_new_in_list):
+        return my_new_in_list
     my_new_in_list[idx] = element
     return my_new_in_list

@@ -3,5 +3,7 @@
 
 
 class Square:
-   def __init__(self, size):
-       self.__size = size
+    """ define a class"""
+    def __init__(self, size):
+        """ define a function"""
+        self.__size = size

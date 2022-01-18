@@ -4,7 +4,7 @@
 
 class Square:
     """Define Class"""
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """ Define class constructor"""
         self.__size = size
         if not isinstance(size, int):
@@ -15,4 +15,3 @@ class Square:
     def area(self):
         """ Define method area"""
         return self.__size * self.__size
-    

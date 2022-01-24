@@ -35,7 +35,7 @@ class Rectangle:
     def __str__(self):
         string = ""
         if self.__height == 0 or self.__width == 0:
-            print()
+            return (string)
         i = 0
         while i < self.__height:
             j = 0

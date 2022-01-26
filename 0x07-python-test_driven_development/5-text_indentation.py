@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" a function that prints a text with 2 new lines after each of these characters: ., ? and :"""
+""" a function that prints a text with 2 new lines after: ., ? and :"""
 
 
 def text_indentation(text):

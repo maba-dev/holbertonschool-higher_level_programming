@@ -15,7 +15,7 @@ Verify import:
 >>> add_integer(-4, 0)
 -4
 >>> add_integer(-4, 2.3)
--2
+-1
 >>> add_integer(3.0, -7)
 -4
 >>> add_integer(-3, -4)

@@ -1,0 +1,18 @@
+#########################
+## 5-text_indentation tests ##
+#########################
+
+Verify import:
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("cherif. BA")
+cherif.
+<BLANKLINE>
+BA
+>>> text_indentation("")
+ 
+>>> text_indentation("Je serais un grand développeur demain. Je serais trés convoité, croyez moi si je vous le dis.")
+Je serais un grand développeur demain.
+<BLANKLINE>
+Je serais trés convoité, croyez moi si je vous le dis.
+<BLANKLINE>

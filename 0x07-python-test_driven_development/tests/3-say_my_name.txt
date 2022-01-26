@@ -32,3 +32,6 @@ My name is CHE
 
 >>> say_my_name("","RIF")
 My name is  RIF
+
+>>> say_my_name("","")
+My name is  

@@ -4,31 +4,31 @@
 
 Verify import:
 
-    >>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer = __import__('0-add_integer').add_integer
 
-    >>> add_integer(2, 3)
-    5
-    >>> add_integer(2, 6.2)
-    8
-    >>> add_integer(0, 0)
-    0
-    >>> add_integer(-4, 0)
-    -4
-    >>> add_integer(-4, 2.3)
-    -2
-    >>> add_integer(3.0, -7)
-    -4
-    >>> add_integer(-3, -4)
-    -7
-    >>> add_integer(-3.2, -1.1)
-    -4
-    >>> add_integer(1)
-    99
-    >>> add_integer('a', 1)
-    Traceback (most recent call last):
-    ...
-    TypeError: a must be an integer
-    >>> add_integer(1, 'b')
-    Traceback (most recent call last):
-    ...
-    TypeError: b must be an integer
+>>> add_integer(2, 3)
+5
+>>> add_integer(2, 6.2)
+8
+>>> add_integer(0, 0)
+0
+>>> add_integer(-4, 0)
+-4
+>>> add_integer(-4, 2.3)
+-2
+>>> add_integer(3.0, -7)
+-4
+>>> add_integer(-3, -4)
+-7
+>>> add_integer(-3.2, -1.1)
+-4
+>>> add_integer(1)
+99
+>>> add_integer('a', 1)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(1, 'b')
+Traceback (most recent call last):
+...
+TypeError: b must be an integer

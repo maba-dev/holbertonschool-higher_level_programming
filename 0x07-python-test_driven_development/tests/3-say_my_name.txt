@@ -21,3 +21,14 @@ TypeError: first_name must be a string
 Traceback (most recent call last):
 ...
 TypeError: last_name must be a string
+
+>>> say_my_name(2, 2)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name("CHE")
+My name is CHE 
+
+>>> say_my_name("","RIF")
+My name is  RIF

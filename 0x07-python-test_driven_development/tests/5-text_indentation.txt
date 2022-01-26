@@ -16,3 +16,16 @@ Je serais un grand développeur demain.
 <BLANKLINE>
 Je serais trés convoité, croyez moi si je vous le dis.
 <BLANKLINE>
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation("il y'a deux hémispheres: Nord et Sud. l'homme a combien de cerveau?")
+il y'a deux hémispheres:
+<BLANKLINE>
+Nord et Sud.
+<BLANKLINE>
+l'homme a combien de cerveau?
+<BLANKLINE>

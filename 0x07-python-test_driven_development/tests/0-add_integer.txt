@@ -1,3 +1,9 @@
+#########################
+## 0-add_integer tests ##
+#########################
+
+Verify import:
+
     >>> add_integer = __import__('0-add_integer').add_integer
 
     >>> add_integer(2, 3)
@@ -22,7 +28,7 @@
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
-    >>> add_integer(1, 'c')
+    >>> add_integer(1, 'b')
     Traceback (most recent call last):
     ...
     TypeError: b must be an integer

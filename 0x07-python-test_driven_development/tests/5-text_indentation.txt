@@ -34,3 +34,6 @@ l'homme a combien de cerveau?
 Traceback (most recent call last):
 ...
 TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> text_indentation("123")
+123

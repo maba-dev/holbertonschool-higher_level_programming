@@ -3,16 +3,12 @@
 
 
 def print_square(size):
+    """ define a function that prints a square"""
     if not isinstance(size, int):
         raise TypeError("size must be integer")
     if size < 0:
         raise ValueError("size must be >= 0")
-    i = 0
-    while i < size:
-        j = 0
-        while j < size:
-            print("#", end="")
-            if j == size - 1:
-                print("\n")
-            j += 1
-        i += 1
+    for i in range(0, size):
+            for j in range(0, size):
+                print("#", end="")
+            print()

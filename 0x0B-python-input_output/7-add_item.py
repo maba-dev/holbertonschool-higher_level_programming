@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""a script that adds all arguments to a Python list, and then save them to a file:"""
+"""a script that adds all arguments to a Python list, and then save them"""
 
 
 import sys
@@ -11,7 +11,6 @@ try:
     list = load_from_json_file(filename)
 except:
     list = []
-
 
 for arg in sys.argv[1:]:
     list.append(arg)

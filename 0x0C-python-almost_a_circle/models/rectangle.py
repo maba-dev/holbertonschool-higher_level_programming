@@ -82,7 +82,7 @@ class Rectangle(Base):
         for j in range(self.height):
             for b in range(self.x):
                 print(" ", end="")
-            for i in range(self.width, 0, -1):
+            for i in range(self.width):
                 print("#", end="")
             print()
 
@@ -94,3 +94,11 @@ class Rectangle(Base):
             self.y,
             self.width,
             self.height))
+
+    def update(self, *args):
+        """ define a function"""
+        i = 0
+        list_args = ["id", "width", "height", "x", "y"]
+        while (i < len(args)):
+            setattr(self, list_args[i], args[i])
+            i += 1

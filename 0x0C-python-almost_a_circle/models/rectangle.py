@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""the class Rectangle that inherits from Base: """ 
-
+"""the class Rectangle that inherits from Base: """
 from models.base import Base
+
 
 class Rectangle(Base):
     """ define a class"""
@@ -13,13 +13,15 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
-    
+
     @property
     def width(self):
+        """ getter function"""
         return self.__width
 
     @width.setter
     def width(self, width):
+        """ setter function"""
         if type(width) is not int:
             raise TypeError("width must be integer")
         if width <= 0:
@@ -36,7 +38,7 @@ class Rectangle(Base):
             raise TypeError("height must be integer")
         if height <= 0:
             raise ValueError("height must be > 0")
-        self.__height =  height
+        self.__height = height
 
     @property
     def x(self):
@@ -70,6 +72,6 @@ class Rectangle(Base):
             for j in range(self.width):
                 print("#", end="")
             print()
-    
+
     def __str__(self):
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))

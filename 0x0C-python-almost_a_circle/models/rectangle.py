@@ -30,10 +30,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """ getter function"""
         return self.__height
 
     @height.setter
     def height(self, height):
+        """ getter function"""
         if type(height) is not int:
             raise TypeError("height must be integer")
         if height <= 0:
@@ -42,10 +44,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """ getter function"""
         return self.__x
 
     @x.setter
     def x(self, x):
+        """ getter function"""
         if type(x) is not int:
             raise TypeError("x must be integer")
         if x < 0:
@@ -54,10 +58,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """ getter function"""
         return self.__y
 
     @y.setter
     def y(self, y):
+        """ getter function"""
         if type(y) is not int:
             raise TypeError("y must be integer")
         if y < 0:
@@ -65,13 +71,16 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
+        """ define a function"""
         return self.height * self.width
 
     def display(self):
+        """ define a function"""
         for i in range(self.height):
             for j in range(self.width):
                 print("#", end="")
             print()
 
     def __str__(self):
+        """ define a function"""
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))

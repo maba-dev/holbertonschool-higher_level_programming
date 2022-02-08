@@ -38,7 +38,7 @@ class Square(Rectangle):
         while (i < len(args)):
             setattr(self, list_args[i], args[i])
             i += 1
-        if kwargs:
+        if kwargs and kwargs != None:
             for key, value in kwargs.items():
                 if key in list_args:
                     setattr(self, key, value)

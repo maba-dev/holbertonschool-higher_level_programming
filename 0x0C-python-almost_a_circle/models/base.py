@@ -18,7 +18,7 @@ class Base:
 
     def to_json_string(list_dictionaries):
         """JSON is one of the standard formats for sharing data reprsntation"""
-        tab = []
+        string = "[]"
         if list_dictionaries is None:
-            return tab
+            return "{:s}".format(string)
         return json.dumps(list_dictionaries)

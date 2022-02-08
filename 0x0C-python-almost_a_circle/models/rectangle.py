@@ -100,8 +100,8 @@ class Rectangle(Base):
         i = 0
         list_args = ["id", "width", "height", "x", "y"]
         while (i < len(args)):
-                setattr(self, list_args[i], args[i])
-                i += 1
+            setattr(self, list_args[i], args[i])
+            i += 1
         if kwargs:
             for key, value in kwargs.items():
                 if key in list_args:

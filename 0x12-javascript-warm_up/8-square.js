@@ -7,11 +7,8 @@ if (Number.isNaN(x)) {
 } else {
   for (let i = 0; i < x; i++) {
     for (let j = 0; j < x; j++) {
-      if (j < x - 1) {
-        process.stdout.write('x');
-      } else {
-        console.log('x');
-      }
+      process.stdout.write('x');
     }
+    process.stdout.write('\n');
   }
 }

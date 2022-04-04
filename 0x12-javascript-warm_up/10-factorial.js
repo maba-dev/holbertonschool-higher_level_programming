@@ -3,7 +3,7 @@
 const args = process.argv;
 let x = parseInt(args[2]);
 if (Number.isNaN(x)) {
-  console.log('1');
+  console.log(1);
 } else {
   let result = 1;
   while (x > 0) {

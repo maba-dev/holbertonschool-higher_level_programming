@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 
-class SomeClass(Base):
+class State(Base):
     """ define a class inherite Base"""
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True)

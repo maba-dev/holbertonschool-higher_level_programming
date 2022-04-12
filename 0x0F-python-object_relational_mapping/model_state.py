@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""use the module SQLAlchemy """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 

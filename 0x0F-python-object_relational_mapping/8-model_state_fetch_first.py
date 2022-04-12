@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     session = Session(engine)
     for state in session.query(State).where(State.id==1).all():
-        if session.query(State).all() == None:
+        if session.query(State).where(State.id==1).all() is None:
             print("Nothing")
         else:
             print("{}: {}".format(state.id, state.name))

@@ -10,5 +10,5 @@ if __name__ == "__main__":
 
     data = requests.post(values)
     data = data.encode('ascii')
-    req = requests(url, data).text
+    req = requests.post(url, data).text
     print(req)

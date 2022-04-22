@@ -9,6 +9,5 @@ if __name__ == "__main__":
     values = {'email': sys.argv[2]}
 
     data = requests.post(values)
-    data = data.encode('ascii')
     req = requests.post(url, data).text
     print(req)

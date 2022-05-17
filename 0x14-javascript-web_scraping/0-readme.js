@@ -1,11 +1,11 @@
 #!/usr/bin/node
-
+const args = process.argv;
 const fs = require('fs');
-fs.readFile('./cisfun',
-    {encoding:'utf8', flag:'r'},
+fs.readFile(args[2],
+    {encoding:'utf-8'},
     function(err, data) {
-        if(err)
-            console.log(err);
-        else
+        if(data)
             console.log(data);
+        else
+            console.log(err);
     });
